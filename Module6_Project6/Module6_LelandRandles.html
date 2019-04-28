@@ -1,0 +1,90 @@
+<html>
+
+<head><title>DATA608 Module 6 Leland Randles</title></head>
+<body>
+
+<h1>DATA608, Module 6, Spring 2019</h1>
+<h2>Leland Randles</h2><br>
+
+<h3>Part 1</h3>
+
+<p><b>Create a function to reverse any word that you type in. This can be typed into either an input box or an alert box, and then print the result in a box or on the webpage.</b></p><br>
+
+<p>
+<form name='enterWord'>
+    <input type="text" size="35" name='word'>
+    <input type="button" value="Reverse Word" onClick=prnt_rs()>
+</form>
+</p>
+
+<div id="part_one"></div>
+
+<script type="text/javascript">
+    function strbuild(inp) {
+        var p = inp; 
+	var c = p.length;
+        var a = c - 1;
+        var bs = [];
+        var rs = "";
+        for (var i = 0; i <= a; i++)
+        {
+            bs[a - i] = p.substr(i, 1);
+        };
+        for (var x = 0; x <= a; x++)
+        {
+            rs = rs + bs[x];
+        };
+        return rs
+    };
+
+    function prnt_rs(){
+        var target1 = document.getElementById("part_one");
+        target1.innerHTML = strbuild(document.enterWord.word.value);
+};
+
+</script>
+
+<br><br>
+<hr>
+<br><br>
+
+<h3>Part 2</h3>
+
+<p><b>Create a function that takes an input number, and prints a table with the first 20 multiples of
+the number, in order 5x4.</b></p><br>
+
+<p>
+<form name='enterNbr'>
+    <input type="number" size="10" name='nbr'>
+    <input type="button" value="Create Table" onClick=crt_tbl()>
+</form>
+</p>
+
+<div id="part_two"></div>
+
+<script type="text/javascript">
+    function tblbld(inp) {
+        var n = parseInt(inp); 
+        var bt = "";
+        var rt = "";
+        for (var y = 0; y <= 19; y++)
+        {
+            if (y===0 || y===4 || y===8 || y===12 || y===16) {var pre = "<tr>";} else {var pre = "";};
+            if (y===3 || y===7 || y===11 || y===15 || y===19) {var suf = "</tr>";} else {var suf = "";};
+            var m = n + (n * y);
+            var bt = pre + bt + "<td>" + String(m) + "</td>" + suf      
+        };
+        rt = "<table>" + bt + "</table>";
+        return rt
+    };
+
+    function crt_tbl(){
+        var target2 = document.getElementById("part_two");
+        target2.innerHTML = tblbld(document.enterNbr.nbr.value);
+    };
+
+</script>
+
+
+</body>
+</html>
