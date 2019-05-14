@@ -14,6 +14,6 @@ Downloaded 2010 Census population data from census.gov’s FactFinder search uti
  
 
 
-Data Handling
+<b>Data Handling</b>
 
 All data handling is documented in the comments of the app.R file. The primary challenge was marrying the cdc dataset to the census dataset. The datasets were merged by State, Sex and AgeGroup. The states used the exact same descriptions in both datasets, but the sex codes were not the same and the age ranges were different. Luckily, the age ranges overlapped in a way that worked (0-19 on cdc file could be matched to sum of 0-4, 5-9, 10-14 and 15-19 from census file). The exception was for under 21 and over 21, where I had to use pro-rating (assuming 40% of 20-24 age range is 20-21 and 60% is 22-24). 
