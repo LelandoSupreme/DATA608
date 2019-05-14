@@ -1,7 +1,8 @@
-Leland Randles<br>
+<b>Leland Randles<br>
 Final Project Documentation<br>
-DATA608 – Spring 2019<br>
+DATA608 – Spring 2019</b><br>
 
+<br>
 <b>Data Sources</b>
 
 Downloaded data set from https://chronicdata.cdc.gov/Alcohol-Related-Disease-Impact/Alcohol-Attributable-Deaths-due-to-Excessive-Alcoh/yqqr-a7uy by clicking on the “Export” tab on the right pane and choosing “CSV for Excel”. After download I committed it to my GitHub report for the course in the “Final_Project” folder: https://raw.githubusercontent.com/LelandoSupreme/DATA608/master/Final_Project/Alcohol-Attributable_Deaths_due_to_Excessive_Alcohol_Use.csv
