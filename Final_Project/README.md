@@ -1,6 +1,6 @@
-Leland Randles
-Final Project Documentation
-DATA608 – Spring 2019
+Leland Randles<br>
+Final Project Documentation<br>
+DATA608 – Spring 2019<br>
 
 <b>Data Sources</b>
 
