@@ -25,3 +25,7 @@ All data handling is documented in the comments of the app.R file. The primary c
 <p>
     <img src="Images/census FactFinder web site.jpg" width="800" height="600" />
 </p>
+
+<b>Visualizations</b>
+
+The ShinyDashboard can be viewed here:  https://lelandosupreme.shinyapps.io/CDC_Alcohol_Attributable_Deaths_2010/
