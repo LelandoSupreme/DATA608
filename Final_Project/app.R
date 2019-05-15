@@ -183,7 +183,7 @@ ui <- dashboardPage(
     ),
   # Three drop-downs to select Cause (Condition), Sex and Age Group and two sort buttons
   dashboardSidebar(
-    selectInput('cause', 'Cause', unique(cdc_ranges$Condition), selected='All Causes'), 
+    selectInput('cause', 'Cause', order(unique(cdc_ranges$Condition)), selected='All Causes'), 
     selectInput('sex', 'Sex', unique(cdc_ranges$Sex), selected='All'), 
     selectInput('age', 'Age Group', unique(cdc_ranges$AgeGroup), selected='All Ages'), 
     # Could only create space between drop downs and buttons bu adding blank sidebarPanel objects
