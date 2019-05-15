@@ -280,7 +280,7 @@ server <- function(input, output) {
       add_trace(x = ~LocationAbbr, y = ~PerCapita, type = 'bar', color = ~LocationAbbr) %>%
       add_trace(x = ~LocationAbbr, y = ~NAPerCapita, type = 'scatter', mode = 'lines', 
                 name = 'National Average', line = list(color = '#000000'), hoverinfo = "text",
-                text = paste0("National Avg: ", round(unique(dfSlice$NAPerCapita),7))) %>%
+                text = paste0("National Avg: ", round(unique(selectedData_ranges()$NAPerCapita),7))) %>%
       layout(xaxis = list(title = 'State', showgrid = FALSE, zeroline = FALSE),
         yaxis = list(side = 'left', title = 'PerCapita', showgrid = FALSE, zeroline = FALSE))
     
